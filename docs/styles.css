@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* 100% of the viewport height */
+    margin: 0;  /* Reset default margin */
+    padding: 0;
+    background: linear-gradient(to bottom right, #f4f4f4, #e1e1e1);
+}
+
+
+.content-wrapper {
+    flex: 1; /* Allow this content wrapper to grow and take up any available space */
+}
+
+
+a {
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #007bff;  /* Example color; adjust as needed */
+    transform: scale(1.05);  /* Slight zoom on hover */
+}
+
+/* Subtle animations for CTA */
+@keyframes jiggle {
+    0% { transform: scale(1); }
+    15% { transform: scale(1.1); }
+    30% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+/* For Mobile Responsiveness - Example */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+    }
+
+    .navbar-content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Header image styles */
+.header-image {
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 100px;
+}
+
+.header-image img {
+    width: 1000px;
+    height: auto;
+    display: block;
+}
+
+/* Logo styles */
+.logo {
+    height: 70px;  /* You can adjust this as per the size of your navbar */
+    width: auto;  /* Maintains the logo's aspect ratio */
+    margin-right: 10px;  /* Adds some space between the logo and subsequent content */
+}
+
+
+.navbar {
+    background: linear-gradient(to right, #333, #444);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-content h1 {
+    font-weight: 600;
+}
+
+.navbar-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-content ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.navbar-content ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.hero {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #eee;
+    font-weight: 600;
+}
+
+.dataset-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Optional: You can adjust the margin as needed */
+    margin-bottom: 20px; /* Optional: Adjust this value too, if required */
+}
+
+.responsive-img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the image aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    border-radius: 8px; /* Optional: Rounds the corners slightly */
+    max-height: 400px; /* This will limit the height, but maintain aspect ratio */
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 23%;  /* Adds 5% padding on the left and right ends */
+}
+
+.stat {
+    flex-basis: 30%;  /* Adjusting for three boxes */
+    box-sizing: border-box;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px; 
+}
+
+.stat h2 {
+    font-size: 24px;  
+    margin: 0;  
+}
+
+.stat p {
+    font-size: 16px;  
+    margin: 10px 0 0 0;  
+}
+
+.about-container {
+    display: flex;
+    align-items: center;  /* Vertically centers the "About" with respect to the description */
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-title {
+    margin-bottom: 50px;  /* Pushes "About" down a bit */
+    margin-right: 100px;  /* Pushes "About" down a bit */
+}
+
+.about-description {
+    flex-basis: 60%;
+}
+
+.dataset-container {
+    display: flex;
+    align-items: flex-start;  /* This is important so it doesn't interfere with the child's vertical alignment */
+    justify-content: flex-start;  
+    gap: 0px;  
+    height: 220px; 
+    width: 110%;     
+    margin: 20px auto;
+}
+
+.dataset-title {
+    margin: 0;  /* Resetting all margins */
+    flex: 0.55;
+    display: flex;
+    align-items: center;  /* This will vertically center the content of .about-title */
+    justify-content: left;  /* This will horizontally center the content */
+    height: 80%;  /* This takes the full height of the parent .about-container */
+}
+
+.dataset-description {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* To align the content to the top */
+    margin: 0; 
+}
+
+
+.download-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Added transform transition */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: jiggle 1s;
+}
+
+.download-btn:hover {
+    background-color: #0090ff;  /* Lighter color on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-2px);  /* subtle lift effect on hover */
+    text-decoration: none; /* Removing the underline if it appears on hover */
+    color: white; /* Keeping the text color white on hover */
+}
+
+.predictor-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-box,
+.run-online-box {
+    flex: 1;
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: jiggle 1s;
+}
+
+.download-btn:hover {
+    background-color: #0090ff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: white;
+}
+
+.contact-section {
+    width: 500px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1, .contact-section h2 {
+    margin: 0;
+    color: #333;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #0077b5; /* LinkedIn's brand color */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.linkedin-logo {
+    height: 24px;   /* Adjust as per requirement */
+    width: 24px;    /* Adjust as per requirement */
+    margin-left: 10px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center; /* Vertically align the image and the author name */
+}
+
+.author-img {
+    width: 75; /* Adjust as needed */
+    height: 75px; /* Adjust as needed */
+    margin-right: 10px; /* Add some space between the image and the name */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+.contact h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.address {
+    margin-top: 40px;
+}
+
+.github {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.university-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px 0;  
+}
+
+.logo-container {
+    flex: 1;  
+    text-align: center;  
+    padding: 10px;  
+}
+
+.uni-logo {
+    max-width: 200px; 
+    height: auto;  
+    margin: 0 auto;  
+}
+
+
+footer {
+    background: linear-gradient(to right, #333, #444);
+    color: white;
+    margin-top: auto;  /* Pushes it to the end of the container */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* It will push the content to the sides */
+    align-items: center;  /* Align items vertically in the center */
+    position: relative;  /* This will be used as a reference for absolute positioning of the logo */
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-logo {
+    position: absolute; /* This ensures the logo div is taken out of the normal flow */
+    right: 10px;        /* Position it to the right */
+    bottom: 10px;       /* Position it at the bottom */
+}
+
+.footer-logo img {
+    max-height: 100px;  /* Adjust the height to your preference */
+    width: auto;
+    margin-left: 20px;  /* Add some space between the text and the logo */
+}
+
+
+footer a:hover {
+    color: #f4f4f4;
+}
