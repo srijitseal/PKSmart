@@ -7,7 +7,7 @@ PKSmart is a repository dedicated to predicting pharmacokinetic (PK) properties,
 Download essential files from https://doi.org/10.5281/zenodo.10611606 and run locally!
 
 ## Run Online on Server v3.0.0 
-If you prefer to use the predictor online via Uppsala University SciLifeLab Serve:[https:///pk-predictor.serve.scilifelab.se/](https://pk-predictor.serve.scilifelab.se/)
+If you prefer to use the predictor online via Uppsala University SciLifeLab Serve:[https://pk-predictor.serve.scilifelab.se/](https://pk-predictor.serve.scilifelab.se/)
 
 ## Data Files
 - **`data/`**: Contains datasets used in training and testing PKSmart models. Includes curated datasets for human and animal pharmacokinetic (PK) parameters.
