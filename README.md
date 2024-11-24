@@ -34,12 +34,12 @@ These notebooks provide data processing, model training, evaluation, and analysi
 
 ### Advanced Model Training
 12. **`03_Predict_human_data_with_artificial_real_animal_data_only.ipynb`**: Uses real animal data where available and artificial animal data for human PK predictions.
-13.**`03_MedianMordredCalculator_artificial_animal_data_mfp_mrd.ipynb`**: Calculates median Mordred descriptors and integrates animal data for enhanced PK predictions.
-14.**`03_Predict_human_data_mean_predictor.ipynb`**: Implements a mean predictor model as a baseline for comparisons.
-15.**`03_Predict_human_data_with_artificial_animal_data_mfp.ipynb`**: Uses artificial animal data and Morgan fingerprints
-16.**`03_Predict_human_data_with_artificial_animal_data_mrd.ipynb`**: Uses artificial animal data and Mordred descriptors
-17.**`03_Predict_human_data_with_artificial_animal_data_mfp_mrd.ipynb`**: Uses artificial animal data with Morgan fingerprints and Mordred descriptors.
-18.**`03_Predict_human_data_artificial_real_animal_data_mfp_mrd.ipynb`**: Uses artificial and real animal data with Morgan fingerprints and Mordred descriptors
+13. **`03_MedianMordredCalculator_artificial_animal_data_mfp_mrd.ipynb`**: Calculates median Mordred descriptors and integrates animal data for enhanced PK predictions.
+14. **`03_Predict_human_data_mean_predictor.ipynb`**: Implements a mean predictor model as a baseline for comparisons.
+15. **`03_Predict_human_data_with_artificial_animal_data_mfp.ipynb`**: Uses artificial animal data and Morgan fingerprints
+16. **`03_Predict_human_data_with_artificial_animal_data_mrd.ipynb`**: Uses artificial animal data and Mordred descriptors
+17. **`03_Predict_human_data_with_artificial_animal_data_mfp_mrd.ipynb`**: Uses artificial animal data with Morgan fingerprints and Mordred descriptors.
+18. **`03_Predict_human_data_artificial_real_animal_data_mfp_mrd.ipynb`**: Uses artificial and real animal data with Morgan fingerprints and Mordred descriptors
 
 
 
